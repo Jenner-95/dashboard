@@ -115,8 +115,8 @@
                           item.patient.first_name + " " + item.patient.last_name
                         }}
                       </td>
-                      <td>{{ item.height }}</td>
-                      <td>{{ item.weight }}</td>
+                      <td>{{ Number(item.height).toFixed(2) }}</td>
+                      <td>{{ Number(item.weight).toFixed(2) }}</td>
                       <td>{{ item.patient.city }}</td>
                       <td>{{ item.patient.state }}</td>
                       <td>
